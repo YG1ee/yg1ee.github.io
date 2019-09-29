@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'hackregular';
+    src: url('hack-regular-webfont.woff2') format('woff2'),
+         url('hack-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'hackregular';
+}
+
+#left-hand {
+    float:left;
+    width:25%;
+}
+
+#right-hand {
+    float:left;
+    /*width:70%;*/
+}
+
+.txt-input {
+    margin:3px;
+    width:60px;
+}
+
+button {
+    margin:5px;
+    /*width:145px;*/
+    padding:5px;
+}
+
+.subtitle {
+    /*
+    margin-top:3px;
+    margin-bottom:3px;
+    */
+    margin:5px;
+	width:145px;
+}
