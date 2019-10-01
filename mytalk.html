@@ -1,0 +1,30 @@
+<td style="width:464;height:24;">
+    <p>&nbsp;<span class="imageblock"><img src="https://github.com/YG1ee/inv/raw/master/ticket.png"
+                class="img_thumb"></span></p>
+</td>
+</tr>
+<tr></tr>
+<tr>
+    <td style="width:464;height:24;">
+        <p style="text-align: center;">&nbsp;<input id="katalk3" type="button" value="낚으러 가기" style="height: 80px;"></p>
+    </td>
+
+    <script type="text/javascript" src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+
+    <script type="text/javascript">
+        Kakao.init('fe67bf14caddb2ffad97347cd47d167d');
+        Kakao.Link.createTalkLinkButton({
+            container: '#katalk3',
+            label: '선물과 메세지를 보냈습니다.\n자세한 내용은 선물함에서 확인해주세요.',
+            image: {
+                src: 'https://github.com/YG1ee/inv/raw/master/ticket.png',
+                width: '320',
+                height: '416'
+            },
+            webButton: {
+                text: '자세히 확인하기',
+                url: 'http://cbmc.tebah.media/saxophone/'
+            }
+        });
+    </script>
+</tr>
