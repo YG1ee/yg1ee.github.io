@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width"/>
+<title>KakaoLink v2 Demo(Default / Feed) - Kakao JavaScript SDK</title>
+<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+
+</head>
+<body>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">
+[카카오링크 v2] 링크 버튼 (디폴트, 피드형)
+</h3>
+</div>
+<div class="panel-body">
+<h4>카카오톡 앱이 설치되어 있는 모바일 기기라면 아래의 링크가 동작합니다.</h4>
+<a id="kakao-link-btn" href="javascript:;">
+<img src="https://funkorean4u.files.wordpress.com/2016/08/unnamed.png?w=656"/>
+</a>
+</div>
+</div>
+<script type='text/javascript'>
+  //<![CDATA[
+    // // 사용할 앱의 JavaScript 키를 설정해 주세요.
+    Kakao.init('3e786f8df14fcfc89d159421a6a7c9b6');
+    // // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
+    Kakao.Link.createDefaultButton({
+      container: '#kakao-link-btn',
+      objectType: 'feed',
+      content: {
+    	title: '빛가운데 색소폰 앙상블',
+    	description: '창단 10주년 감사 연주회',
+    	imageUrl: 'https://github.com/YG1ee/inv/raw/master/ticket.png',
+    	link: {
+    	  mobileWebUrl: 'http://cbmc.tebah.media/saxophone/',
+    	  webUrl: 'http://cbmc.tebah.media/saxophone/'
+    	}
+      },
+      social: {
+    	likeCount: 286,
+    	commentCount: 45,
+    	sharedCount: 845
+      },
+      buttons: [{
+    	title: '확인하기',
+    	link: {
+    	  mobileWebUrl: 'https://developers.kakao.com',
+    	  webUrl: 'https://developers.kakao.com'
+        }
+      }]
+    });
+  //]]>
+</script>
+
+</body>
+<!--------------- 아래의 코드는 삭제해주세요. 샘플이 제대로 동작하지 않을 수 있습니다. ---------------------->
+<script src="/resource/Message.js"></script>
+<script src="/vassets/javascripts/demos_layout.js"></script>
+<link rel="stylesheet" media="screen" href="/assets/bootstrap/css/bootstrap.min.css"/>
+<link rel="stylesheet" media="screen" href="/vassets/stylesheets/docs_js_demos.css"/>
+</html>
