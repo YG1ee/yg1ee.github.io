@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'hackregular';
+    src: url('hack-regular-webfont.woff2') format('woff2'),
+         url('hack-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #FFFFF0;
+    font-family: 'hackregular';
+}
+
+.con_number {
+    background-color: bisque;
+}
+
+.con_desc {
+    background-color: rgb(219, 255, 195);
+    text-align: center;
+    width:100px;
+    height:30px;
+    font-size:9pt;
+}
