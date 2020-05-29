@@ -7,6 +7,7 @@
     <meta property="og:title" content="냥장콘 컬렉션">
     <meta property="og:description" content="귀여운 고양이 이모티콘 컬렉션 100">
     <meta property="og:image" content="main_img.jpg">
+    <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
 </head>
 
 <body>
@@ -20,12 +21,12 @@
                 <td>5</td>
             </tr>
             <tr>
-                <td><img src="icon_1.png" title="later" />
-                <td><img src="icon_2.png" title="dont go" />
-                <td><img src="icon_3.png" title="no one" />
-                <td><img src="icon_4.png" title="not my fault" />
-                <td><img src="icon_5.png" title="smarty pants" />
-            </tr>
+                <td><a id="icon_1" href="javascript:;"><img src="icon_1.png" title="later" /></a></td>
+                <td><img src="icon_2.png" title="dont go" /></td>
+                <td><img src="icon_3.png" title="no one" /></td>
+                <td><img src="icon_4.png" title="not my fault" /></td>
+                <td><img src="icon_5.png" title="smarty pants" /></td>
+            </tr></td>
             <tr class="con_desc">
                 <td>그럼 이만 총총</td>
                 <td>가지 말고</td>
@@ -42,11 +43,11 @@
                 <td>10</td>
             </tr>
             <tr>
-                <td><img src="icon_6.png" title="feeling good" />
-                <td><img src="icon_7.png" title="barf" />
-                <td><img src="icon_8.png" title="wish hard" />
-                <td><img src="icon_9.png" title="concur" />
-                <td><img src="icon_10.png" title="middle finger" />
+                <td><img src="icon_6.png" title="feeling good" /></td>
+                <td><img src="icon_7.png" title="barf" /></td>
+                <td><img src="icon_8.png" title="wish hard" /></td>
+                <td><img src="icon_9.png" title="concur" /></td>
+                <td><img src="icon_10.png" title="middle finger" /></td>
             </tr>
             <tr class="con_desc">
                 <td>냥 기분굿</td>
@@ -64,11 +65,11 @@
                 <td>15</td>
             </tr>
             <tr>
-                <td><img src="icon_11.png" title="sorry dude" />
-                <td><img src="icon_12.png" title="pathetic" />
-                <td><img src="icon_13.png" title="clean" />
-                <td><img src="icon_14.png" title="MIA call" />
-                <td><img src="icon_15.png" title="yeah right" />
+                <td><img src="icon_11.png" title="sorry dude" /></td>
+                <td><img src="icon_12.png" title="pathetic" /></td>
+                <td><img src="icon_13.png" title="clean" /></td>
+                <td><img src="icon_14.png" title="MIA call" /></td>
+                <td><img src="icon_15.png" title="yeah right" /></td>
             </tr>
             <tr class="con_desc">
                 <td>미안하게 됐수다</td>
@@ -497,6 +498,33 @@
             </tr>
         </table>
     </div>
+
+<script type='text/javascript'>
+    // // 사용할 앱의 JavaScript 키를 설정해 주세요.
+    Kakao.init('32ac78b0b5d2fe39116efb22d978c462');
+    // // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
+    Kakao.Link.createDefaultButton({
+      container: '#icon_1',
+      objectType: 'feed',
+      content: {
+    	title: '냥장콘 컬렉션',
+    	description: '케장콘 패러디 냥장콘 컬렉션',
+    	imageUrl: 'https://yg1ee.github.io/nyangjang/icon_1.png',
+    	link: {
+    	  mobileWebUrl: 'http://yg1ee.github.io/nyangjang',
+    	  webUrl: 'http://yg1ee.github.io/nyangjang'
+    	}
+      },
+      buttons: [{
+    	title: '낭낭하게 확인하러 가기',
+    	link: {
+    	  mobileWebUrl: 'http://yg1ee.github.io/nyangjang',
+    	  webUrl: 'http://yg1ee.github.io/nyangjang'
+        }
+      }]
+    });
+</script>
+
 </body>
 
 </html>
