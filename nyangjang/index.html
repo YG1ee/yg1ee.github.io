@@ -461,7 +461,7 @@
                 <td>105</td>
             </tr>
             <tr>
-                <td><img src="icon_100.png" title="" /></td>
+                <td><a id="icon_102" href="javascript:;"><img src="icon_102.png" title="satisfied" /></a></td>
                 <td><img src="icon_101.png" title="" /></td>
                 <td><img src="icon_102.png" title="" /></td>
                 <td><img src="icon_103.png" title="" /></td>
@@ -510,6 +510,26 @@
     	title: '이모티콘을 보냈습니다',
     	// description: '낭낭하네요',
     	imageUrl: 'https://yg1ee.github.io/nyangjang/icon_1.png',
+    	link: {
+    	  mobileWebUrl: 'http://yg1ee.github.io/nyangjang',
+    	  webUrl: 'http://yg1ee.github.io/nyangjang'
+    	}
+      },
+      buttons: [{
+    	title: '낭낭하게 냥장콘 쓰기',
+    	link: {
+    	  mobileWebUrl: 'http://yg1ee.github.io/nyangjang',
+    	  webUrl: 'http://yg1ee.github.io/nyangjang'
+        }
+      }]
+    });
+    Kakao.Link.createDefaultButton({
+      container: '#icon_102',
+      objectType: 'feed',
+      content: {
+    	title: '이모티콘을 보냈습니다',
+    	// description: '낭낭하네요',
+    	imageUrl: 'https://yg1ee.github.io/nyangjang/icon_102.png',
     	link: {
     	  mobileWebUrl: 'http://yg1ee.github.io/nyangjang',
     	  webUrl: 'http://yg1ee.github.io/nyangjang'
