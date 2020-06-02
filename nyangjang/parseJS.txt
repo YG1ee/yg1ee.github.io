@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<string.h>
+int main() {
+    char str[300]; int i = 111;
+    while (fgets(str, 300, stdin)) {
+        str[strlen(str) - 1] = 0;
+        char *a = strstr(str, "icon_");
+        if (a) {
+            sprintf(a, "icon_%d',", i);
+        }
+        char *b = strstr(str, "imageUrl:");
+        if (b) {
+            sprintf(b, "imageUrl: 'https://yg1ee.github.io/nyangjang/icon_%d.png", i++);
+        }
+        printf("printf(\"%s\\n\");\n",str);
+        memset(str, 0, 300);
+    }
+}
