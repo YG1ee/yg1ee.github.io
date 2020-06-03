@@ -1,14 +1,29 @@
+/*
 @font-face {
     font-family: 'hackregular';
-    src: url('hack-regular-webfont.woff2') format('woff2'),
-         url('hack-regular-webfont.woff') format('woff');
+    src: url('hack-regular-webfont.woff') format('woff'),
+         url('hack-regular-webfont.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
-body {
+@font-face {
+    font-family: 'NanumGothic';
+    src: url('../fonts/Nanum/NanumGothic.eot') format('embedded-opentype'),
+         url('../fonts/Nanum/NanumGothic.woff') format('woff');
+}
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=PT+Mono&display=swap');
+
+@font-face {
+    font-family: 'SeoulNamsan';
+    src: url('../fonts/Seoul/08SeoulNamsanM.ttf')
+}
+
+tr {
     background-color: #FFFFF0;
-    font-family: 'hackregular';
+    font-family: 'SeoulNamsan';
 }
 
 .con_number {
