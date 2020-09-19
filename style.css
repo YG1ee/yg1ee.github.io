@@ -7,8 +7,14 @@
 }
 
 body {
-    background-color: #FFFFF0;
+    background-color: #282A36;
+    color: white;
     font-family: 'hackregular';
+}
+
+a {
+    text-decoration: none;
+    color: #F1FA8C;
 }
 
 #left-hand {
