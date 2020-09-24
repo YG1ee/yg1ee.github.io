@@ -18,7 +18,7 @@
 
 @font-face {
     font-family: 'SeoulNamsan';
-    src: url('../fonts/Seoul/08SeoulNamsanM.woff')
+    src: url('../fonts/Seoul/08SeoulNamsanM.woff');
 }
 
 body {
