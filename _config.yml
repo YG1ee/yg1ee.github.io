@@ -1,1 +1,36 @@
-theme: jekyll-theme-leap-day
+# Site settings
+title: "yg1ee weblog"
+email: fanfolderkim@gmail.com
+description: "A dark blog theme for Jekyll."
+baseurl: ""
+url: "https://yg1ee.github.io"
+title_description: "개발 일지"
+title_image: "./rss/Pi_pixel.png"
+google_analytics: "UA-20365477-4"
+github_repository: https://github.com/yg1ee
+post_limit: 5
+
+# Social usernames/URLs
+twitter_username: yg1ee
+github_username:  yg1ee
+#instagram_username: 
+#reddit_username: 
+#linkedin_link: 
+#google_plus_link: 
+#stackoverflow_link: 
+xing_link:
+facebook_link:
+
+# Footer
+footer_left: "Made with <i class=\"fa fa-heart\"></i> by <a href=\"https://twitter.com/_jacobtomlinson\">Jacob Tomlinson</a>"
+footer_right: "&lt;/&gt; on <a href=\"https://github.com/jacobtomlinson/carte-noire\">Github</a> &nbsp;<i class=\"fa fa-github-alt\"></i>"
+
+# Build settings
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+permalink: pretty
+exclude: [vendor]
