@@ -1,18 +1,18 @@
 # Site settings
-title: "yg1ee weblog"
+title: "YG1ee Weblog"
 email: fanfolderkim@gmail.com
 description: "A dark blog theme for Jekyll."
 baseurl: ""
 url: "https://yg1ee.github.io"
 title_description: "개발 일지"
-title_image: "./rss/Pi_pixel.png"
+# title_image: "./rss/Pi_pixel.png"
 google_analytics: "UA-20365477-4"
 github_repository: https://github.com/yg1ee
 post_limit: 5
 
 # Social usernames/URLs
-twitter_username: yg1ee
-github_username:  yg1ee
+twitter_username: YG1ee
+github_username:  YG1ee
 #instagram_username: 
 #reddit_username: 
 #linkedin_link: 
