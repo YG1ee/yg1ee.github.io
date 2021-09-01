@@ -4,7 +4,7 @@
     <h1>To-Do List</h1>
     <ul>
       <li>
-        <caticon label="My Item" :done="false"></caticon>
+        <Caticon label="My Item" :done="false"></Caticon>
       </li>
     </ul>
   </div>
@@ -16,12 +16,12 @@ import Caticon from './components/Caticon.vue'
 // import HelloWorld from './components/HelloWorld.vue'
 
 export default {
-  name: 'App',
+  name: 'app',
   data() {
     return {
       // 여기에 데이터 저장
       // key: value
-      isDone: this.done
+      // isDone: this.done
     }
   },
   components: {
