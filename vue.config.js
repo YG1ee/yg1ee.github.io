@@ -1,6 +1,6 @@
 module.exports = {
-    baseUrl: './',
-    publicPath: './',
+    baseUrl: '/',
+    publicPath: '/',
     caticon: './caticon'
     // outputDir: 'docs'
 }
