@@ -1,24 +1,49 @@
-# yg1ee.github.io
+# Carte Noire
 
-## Project setup
-```
-npm install
-```
+A simple Jekyll theme for blogging. Not named after the coffee.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+![Homepage](http://i.imgur.com/xlmHArV.png)
 
-### Compiles and minifies for production
-```
-npm run build
-```
+### Article
+![Article](http://i.imgur.com/8rD8FfC.png)
 
-### Lints and fixes files
-```
-npm run lint
-```
+### Posts grouped by year
+![All Posts](http://i.imgur.com/9bNs2Sc.png)
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### JavaScript Search
+![Search](http://i.imgur.com/yQqMeSl.png)
+
+### Menu by mmenu
+![Menu](http://i.imgur.com/SClrNSH.png)
+
+## Contact
+If you wish to contact me regarding this theme please raise an issue on GitHub,
+tweet me [@_jacobtomlinson](http://twitter.com/yg1ee) or email me
+[jacob@jacobtomlinson.co.uk](mailto:jacob@jacobtomlinson.co.uk).
+
+## Contribution
+Pull requests are very welcome.
+
+## Theme
+This jekyll theme has been created from scratch. Ideas and inspiration are taken
+from other places but the code is my own.
+
+## Tools and Libraries
+The following tools and libraries are used in this theme
+
+### JavaScript
+ * [jQuery](http://jquery.com/)
+ * [MMenu](http://mmenu.frebsite.nl/)
+ * [HighlightJS](https://highlightjs.org/)
+ * [Simple Jekyll Search](https://github.com/christian-fei/Simple-Jekyll-Search)
+
+### CSS
+ * [Bootstrap](http://getbootstrap.com/)
+ * [Font Awesome](http://fortawesome.github.io/Font-Awesome/)
+
+### Other
+ * [Real Favicon Generator](http://realfavicongenerator.net/)
+ * [Google Analytics](http://www.google.com/analytics/)
+
+## License
+The jekyll theme, HTML, CSS and JavaScript is licensed under GPLv3 (unless stated otherwise in the file).
