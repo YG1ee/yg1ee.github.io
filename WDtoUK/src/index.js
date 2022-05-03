@@ -15,12 +15,12 @@ function printUK() {
 					// wrong spot
 					case '\uDFE6': // 🟦
 					case '\uDFE8': // 🟨
-						result += '🟨';
+						result += '🟦';
 						break;
 					// correct spot
 					case '\uDFE7': // 🟧
 					case '\uDFE9': // 🟩
-						result += '🟦';
+						result += '🟨';
 						break;
 				}
 				i++;
