@@ -1,6 +1,8 @@
-function printUK() {
+let result = "";
+
+printUK = () => {
 	const wordl = document.getElementById('wordl').value;
-	let result = ""; let count = 0; let idx = 0;
+	let count = 0; let idx = 0;
 
 	for (let i = 0; i < wordl.length; i++) {
 		if (count < 1) {
@@ -9,7 +11,7 @@ function printUK() {
 			idx = i + 1;
 		}
 		else {
-			// colored square
+			// 색 있는 사각형 (이모지)
 			if (wordl[i] == '\uD83D') {
 				switch (wordl[i + 1]) {
 					// wrong spot
@@ -23,9 +25,11 @@ function printUK() {
 						result += '🟨';
 						break;
 				}
+				// 이모지는 2자로 이루어짐.
 				i++;
 			}
 			// not in any spot
+			// 빈 사각형과 검은 사각형은 이모지가 아님.
 			else if (wordl[i] == '⬜')
 				result += '⬛';
 			// plain character
@@ -34,6 +38,11 @@ function printUK() {
 		}
 	}
 
-	document.getElementById("bye").style.display = 'none';
+	document.getElementById("bye").style.display = "none";
+	// document.getElementById("hi").style.display = "block";
 	document.getElementById("result").innerText = result;
+}
+
+shareUK = () => {
+	// document.getElementById("result").innerText = result;
 }
