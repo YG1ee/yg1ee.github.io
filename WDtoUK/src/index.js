@@ -17,12 +17,12 @@ printUK = () => {
 					// wrong spot
 					case '\uDFE6': // 🟦
 					case '\uDFE8': // 🟨
-						result += '🟦';
+						result += '🟨';
 						break;
 					// correct spot
 					case '\uDFE7': // 🟧
 					case '\uDFE9': // 🟩
-						result += '🟨';
+						result += '🟦';
 						break;
 				}
 				// 이모지는 2자로 이루어짐.
