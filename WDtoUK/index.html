@@ -6,24 +6,28 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Wordle res to Ukraine</title>
 	<link rel="shortcut icon" href="res/favicon.ico">
-	<script src="src/index.js">
-	</script>
+	<link rel="stylesheet" href="src/styles.css">
+	<!-- <script type="text/javascript" src="src/index.js"></script> -->
 </head>
 
 <body>
-	<div id="bye">
-		<h1 style="word-break: break-all;">Wordle 결과를<br> 우크라이나 국기<br>색으로 변환</h1>
-		<textarea autofocus required id="wordl" rows="8" cols="15"
-			placeholder="Wordle 결과를 붙여넣고 버튼을 누르세요."></textarea>
-		<br class="bye">
+	<div class="toggling">
+		<h1 style="word-break: break-all;">Wordle 결과를<br> 우크라이나 국기 <br>🇺🇦 색으로 변환</h1>
+
+		<textarea autofocus required id="wordl" rows="8" cols="15" placeholder="Wordle 결과를 붙여넣고 버튼을 누르세요."></textarea>
+
+		<br>
+		<br>
 		<button onclick="printUK()">변환하기</button>
 	</div>
 
-	<p id="result"></p>
-	<div id="hi" style="display:none">
-		<button onclick="shareUK()">공유하기</button>
-	</div>
+	<div class="toggling output_result hidden"></div>
+	
+	<br>
+	<button class="success hidden" onclick="shareUK()">공유하기</button>
+	<button class="toggling hidden" onclick="retryUK()">다시하기</button>
 
+	<script type="text/javascript" src="src/index.js"></script>
 </body>
 
 </html>
