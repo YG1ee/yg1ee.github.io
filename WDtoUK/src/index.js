@@ -1,6 +1,7 @@
 let result = "";
 
 const togl = document.querySelectorAll(".toggling");
+const shareButton = document.querySelector(".success");
 
 printUK = () => {
   const wordl = document.getElementById("wordl").value;
@@ -80,6 +81,27 @@ retryUK = () => {
 };
 
 shareUK = () => {
-  const res = document.querySelector(".output_result").innerText;
-  navigator.clipboard.writeText(res);
+  if (navigator.share) {
+    navigator.share({
+      text: result
+    });
+  }
+  else {
+    console.log("Well that didn't work...");
+    const res = document.querySelector(".output_result").innerText;
+    navigator.clipboard.writeText(res);
+  }
 };
+
+// shareButton.addEventListener("click", event => {
+//   if (navigator.share) {
+//     // navigator.share({
+//     //   text: result
+//     // });
+//   }
+//   else {
+//     console.log("Well that didn't work...");
+//     const res = document.querySelector(".output_result").innerText;
+//     navigator.clipboard.writeText(res);
+//   }
+// });
