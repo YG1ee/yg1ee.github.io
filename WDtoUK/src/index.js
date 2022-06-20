@@ -5,7 +5,7 @@ const togl = document.querySelectorAll(".toggling");
 let printUK = () => {
   const wordl = document.getElementById("wordl").value;
   let wordlFlag = false; // Wordle이 맞는지 여부
-  let type = 0; // type이 혼용되었는지 bitmask
+  let type = 0b00; // type이 혼용되었는지 bitmask
 
   for (let i = 0; i < wordl.length; i++) {
     // 색 있는 사각형 (이모지)
@@ -24,7 +24,8 @@ let printUK = () => {
           wordlFlag = true;
           break;
         default:
-          break;
+          result += wordl[i];
+          continue;
       }
 
       switch (wordl[i + 1]) {
@@ -37,7 +38,8 @@ let printUK = () => {
           type |= 0b01;
           break;
         default:
-          break;
+          result += wordl[i];
+          continue;
       }
       // 이모지는 2자로 이루어짐.
       i++;
