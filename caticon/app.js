@@ -1,6 +1,6 @@
-import images from "obj.js"
-import titles from "obj.js"
-import descriptions from "obj.js"
+import images from "./obj.js"
+import titles from "./obj.js"
+import descriptions from "./obj.js"
 
 table = document.querySelector("table");
 
