@@ -15,7 +15,7 @@ for (let i = 1; i <= COUNT; i += 5) {
     }
 
     tr2 = document.createElement("tr"); tr2.setAttribute("class", "con_picture");
-    for (let j = i; (j < i + 5) && (j <= COUNT); j++) {
+    for (j = i; (j < i + 5) && (j <= COUNT); j++) {
         td = document.createElement("td");
 
         a = document.createElement("a");
@@ -32,7 +32,7 @@ for (let i = 1; i <= COUNT; i += 5) {
     }
 
     tr3 = document.createElement("tr"); tr3.setAttribute("class", "con_desc");
-    for (let j = i; (j < i + 5) && (j <= COUNT); j++) {
+    for (j = i; (j < i + 5) && (j <= COUNT); j++) {
         td = document.createElement("td");
         // td.textContent = descriptions[j - 1];
         td.innerHTML = descriptions[j - 1];
