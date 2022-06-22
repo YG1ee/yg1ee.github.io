@@ -2,35 +2,38 @@
 <html lang="ko">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Wordle result to Ukraine flag</title>
-	<link rel="shortcut icon" href="res/favicon.ico">
-	<link rel="stylesheet" href="src/WD_style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wordle result to Ukraine flag</title>
+  <link rel="shortcut icon" href="res/favicon.ico">
+  <link rel="stylesheet" href="src/WD_style.css">
 </head>
 
 <body>
-	<div class="toggling">
-		<h1 style="word-break: break-all;">
-			Wordle 결과를<br>
-			우크라이나 국기 <br>🇺🇦 색으로 변환
-		</h1>
+  <div style="display: block; text-align: center;">
+    <div class="toggling">
+      <h1 class="sn">
+        Wordle 결과를<br>
+        우크라이나 국기 <br>
+        🇺🇦 색으로 변환
+      </h1>
 
-		<textarea autofocus required id="wordl" rows="8" cols="15"
-			placeholder="Wordle 결과를 붙여넣고 버튼을 누르세요."></textarea>
+      <textarea autofocus required id="wordl" rows="8" cols="15"
+        placeholder="Wordle 결과를 붙여넣고 버튼을 누르세요."></textarea>
 
-		<br>
-		<br>
-		<button class="printUK">변환하기</button>
-	</div>
+      <br>
+      <br>
+      <button class="printUK">변환하기</button>
+    </div>
 
-	<div class="toggling output_result hidden"></div>
+    <div class="toggling output_result hidden"></div>
+    <br>
+    <button class="success hidden shareUK">공유하기</button>
+    <button class="toggling hidden retryUK">다시하기</button>
+  </div>
 
-	<br>
-	<button class="success hidden shareUK">공유하기</button>
-	<button class="toggling hidden retryUK">다시하기</button>
 
-	<script type="text/javascript" src="src/index.js"></script>
+  <script type="text/javascript" src="src/index.js"></script>
 </body>
 
 </html>

@@ -66,7 +66,6 @@ let printUK = () => {
     item.classList.toggle("hidden");
   });
 
-  document.getElementById("wordl").value = "";
   result = "";
 };
 
@@ -75,6 +74,7 @@ let retryUK = () => {
     item.classList.toggle("hidden");
   });
   document.querySelector(".success").classList.add("hidden");
+  document.getElementById("wordl").value = "";
 };
 
 let shareUK = () => {

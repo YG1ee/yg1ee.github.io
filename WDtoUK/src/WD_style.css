@@ -6,6 +6,7 @@
 body {
   color: #F8F8F2;
   background-color: #282A36;
+  word-break: break-all;
 }
 
 h1 {
