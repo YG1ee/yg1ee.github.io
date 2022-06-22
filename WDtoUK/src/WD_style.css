@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'SeoulNamsan';
+  src: url('../../fonts/Seoul/08SeoulNamsanM.woff');
+}
+
+body {
+  color: #F8F8F2;
+  background-color: #282A36;
+}
+
+h1 {
+  color: #F1FA8C;
+}
+
+.sn {
+  font-family: 'SeoulNamsan';
+}
+
+.hidden {
+  display: none;
+}
