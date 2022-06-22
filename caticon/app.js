@@ -810,6 +810,8 @@ cacao_images = [
   "https://i.imgur.com/rnQbXxg.png",
   "https://i.imgur.com/yvd1iE9.png",
   "https://i.imgur.com/lM1WcTb.png",
+  "https://i.imgur.com/oVQ76oU.png",
+  "https://i.imgur.com/ZgJk3IK.png"
 ];
 
 COUNT = images.length;
