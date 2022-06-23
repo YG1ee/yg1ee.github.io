@@ -8,6 +8,7 @@ thumbnail: jekyll
 tags:
  - about
  - jekyll
+ - manual
 ---
 
 Jekyll is a tool for transforming your plain text into static websites and

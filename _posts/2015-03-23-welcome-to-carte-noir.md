@@ -11,6 +11,7 @@ tags:
  - to
  - carte
  - noire
+ - manual
 ---
 
 Welcome to Carte Noire.
