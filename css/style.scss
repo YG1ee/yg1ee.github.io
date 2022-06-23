@@ -22,17 +22,25 @@ $darker:         #21211E;
 $dark:           #191A21;
 $padd:           #282A36;
 $light-medium:   #030303;
-$yellow:         #F1FA8C;
 $lime:           #56FA77;
-$green:          #92C7A3;
 $light:          #DFECE6;
 $white:          #FFFFFF;
 $dark-purple:    #300030;
 $medium-purple:  #480048;
 $regular-purple: #601848;
-$red:            #C04848;
-$orange:         #F07241;
+
+// dracula theme
+$background:     #282A36;
+$current-line:   #44475A;
+$foreground:     #F8F8F2;
+$comment:        #6272A4;
+$cyan:           #8BE9FD;
+$green:          #50FA7B;
+$orange:         #FFB86C;
 $pink:           #FF79C6;
+$purple:         #BD93F9;
+$red:            #FF5555;
+$yellow:         #F1FA8C;
 
 /* Responsive sizes */
 $screen-sm-min: 768px;
