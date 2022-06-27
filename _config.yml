@@ -14,15 +14,16 @@ post_limit: 5
 # Social usernames/URLs
 twitter_username: YG1ee
 github_username:  YG1ee
-#instagram_username: 
-#reddit_username: 
-#linkedin_link: 
-#google_plus_link: 
-#stackoverflow_link: 
+# instagram_username: 
+# reddit_username: 
+# linkedin_link: 
+# google_plus_link: 
+twitter_link: https://twitter.com/YG1ee
+# stackoverflow_link: 
 # xing_link:
 # facebook_link:
 
-timezone: Asia/Seoul
+# timezone: Asia/Seoul
 
 # Footer
 footer_left: "Theme made with <i class=\"fa fa-heart\"></i> by <a href=\"https://twitter.com/_jacobtomlinson\">Jacob Tomlinson</a>"
