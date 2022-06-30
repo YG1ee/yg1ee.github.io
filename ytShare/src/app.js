@@ -16,7 +16,7 @@ let shareYT = () => {
   const yText = iLink.value;
 
   const linkPos = yText.indexOf("?v=");
-  if (linkPos != -1) {
+  if (linkPos != -1 && yText.search("youtu") != -1) {
     const shareLink = "https://youtu.be/" + yText.substr(linkPos + 3, 11);
 
     if (navigator.share) {
@@ -25,23 +25,23 @@ let shareYT = () => {
           text: shareLink
         })
         .then(() => {
-          textResult.innerText = "공유 완료!";
+          textResult.innerText = "공유 완료 😎";
         })
         .catch((error) => {
-          textResult.innerText = "공유 취소";
+          textResult.innerText = "공유 취소 😲";
         });
     } else {
       navigator.clipboard.writeText(shareLink);
 
       oLink.innerText = shareLink;
-      textResult.innerText = "클립보드에 복사 완료! 😎";
+      textResult.innerText = "클립보드에 복사 완료 😎";
     }
     rmHidden(oLink);
   }
   else {
     addHidden(btnShareYT);
     if (yText.indexOf("https://youtu.be/") != -1 && (yText.length == 28))
-      textResult.innerText = "이미 변환이 완료된 링크네요! 😄";
+      textResult.innerText = "이미 변환이 완료된 링크네요 😄";
     else
       textResult.innerText = "유튜브 링크가 아닌 것 같습니다 🙄";
   }
