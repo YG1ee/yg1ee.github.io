@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youtube Share</title>
+  <link rel="shortcut icon" href="res/yt.svg">
+  <link rel="stylesheet" href="../src/style.css" type="text/css">
+  <meta property="og:title" content="유튜브 링크 공유">
+  <meta property="og:description" content="유튜브 링크 공유 도우미">
+  <meta property="og:image" content="./res/ytShare.png">
+</head>
+
+<body>
+  <div style="margin-left: 10px; margin-top:20px; margin-bottom: 20px;">
+    <h3 class="yellow">유튜브 링크</h3>
+    <textarea autofocus required id="input_link" class="toggling" placeholder="공유할 유튜브 링크"></textarea>
+
+  </div>
+  <div style="margin-left: 10px;">
+    <p id="result_link" class="foreground"></p>
+    <p id="result" class="foreground"></p>
+    <button class="shareYT">공유하기</button>
+    <button class="retryYT hidden">다시하기</button>
+  </div>
+  <script type="text/javascript" src="src/app.js"></script>
+</body>
+
+</html>
