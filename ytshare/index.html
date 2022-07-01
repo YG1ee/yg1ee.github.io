@@ -13,16 +13,31 @@
 </head>
 
 <body>
-  <div style="margin-left: 10px; margin-top:20px; margin-bottom: 20px;">
-    <h3 class="yellow">유튜브 링크</h3>
-    <input autofocus required id="input_link" placeholder="공유할 유튜브 링크"></textarea>
-  </div>
+  <div style="margin: 10px">
+    <div style="margin-bottom: 30px">
+      <h3 class="yellow">유튜브 링크</h3>
+      <input autofocus id="input_link" placeholder="공유할 유튜브 링크">
+    </div>
 
-  <div style="margin-left: 10px;">
-    <p id="result_link" class="foreground"></p>
-    <p id="result" class="foreground"></p>
-    <button class="shareYT">공유하기</button>
-    <button class="retryYT hidden">다시하기</button>
+    <div class="timestamp">
+      <h3 class="green">
+        타임스탬프
+        <input type="checkbox" id="use_time">
+      </h3>
+    </div>
+    <div class="pink time_input hidden">
+      시간
+      <input type="number" value=0 min=0 id="h" placeholder="시">
+      <input type="number" value=0 min=0 max=59 id="m" placeholder="분">
+      <input type="number" value=0 min=0 max=59 id="s" placeholder="초">
+    </div>
+
+    <div>
+      <p id="result_link" class="foreground"></p>
+      <p id="result" class="foreground"></p>
+      <button class="shareYT">공유하기</button>
+      <button class="retryYT hidden">다시하기</button>
+    </div>
   </div>
   <script type="text/javascript" src="src/app.js"></script>
 </body>
