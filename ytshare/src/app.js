@@ -8,6 +8,8 @@ const timestamp = document.querySelector(".timestamp");
 const useTime = document.querySelector("#use_time");
 const inputTime = document.querySelector(".time_input");
 
+let flagAlready = 0;
+
 let hideElem = (item) => {
   item.classList.add("hidden");
 }
@@ -23,12 +25,17 @@ let shareYT = () => {
   let min = parseInt(document.querySelector("#m").value);
   let sec = parseInt(document.querySelector("#s").value);
 
-  const linkPos = yText.indexOf("?v=");
-  if (linkPos != -1 && yText.search("youtu") != -1) {
-    let shareLink = "https://youtu.be/" + yText.substr(linkPos + 3, 11);
+  let linkPos = yText.indexOf("?v=");
+  if (linkPos === -1 && yText.indexOf("?t=") !== -1) {
+    linkPos = yText.indexOf("youtu.be/");
+    flagAlready = 1;
+  }
+
+  if (linkPos !== -1) {
+    let shareLink = "https://youtu.be/" + yText.substr(linkPos + (flagAlready === 1 ? "youtu.be/".length : "?v=".length), 11);
 
     if (useTime.checked) {
-      if (!(hour == 0 && min == 0 && sec == 0)
+      if (!(hour === 0 && min === 0 && sec === 0)
       && (!(hour < 0 || min < 0 || sec < 0))) {
         const tStamp = (hour * 3600) + (min * 60) + sec;
         shareLink += "?t=" + tStamp;
@@ -57,10 +64,10 @@ let shareYT = () => {
   }
   else {
     hideElem(btnShareYT);
-    if (yText.indexOf("https://youtu.be/") != -1 && (yText.length == 28))
-      textResult.innerText = "이미 변환이 완료된 링크네요 😄";
+    if (yText.search("youtu.be") !== -1 && yText.length === 28)
+        textResult.innerText = "이미 변환이 완료된 링크네요 😄";
     else
-      textResult.innerText = "유튜브 링크가 아닌 것 같습니다 🙄";
+        textResult.innerText = "유튜브 영상 링크가 아닌 것 같습니다 🙄";
   }
 
   hideElem(inputTime);
