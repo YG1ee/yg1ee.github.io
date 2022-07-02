@@ -19,9 +19,9 @@ let showElem = (item) => {
 let shareYT = () => {
   const yText = iLink.value;
 
-  let hour = document.querySelector("#h").value;
-  let min = document.querySelector("#m").value;
-  let sec = document.querySelector("#s").value;
+  let hour = parseInt(document.querySelector("#h").value);
+  let min = parseInt(document.querySelector("#m").value);
+  let sec = parseInt(document.querySelector("#s").value);
 
   const linkPos = yText.indexOf("?v=");
   if (linkPos != -1 && yText.search("youtu") != -1) {
