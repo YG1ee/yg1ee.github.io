@@ -14,6 +14,12 @@
 
 <body>
   <div style="margin: 10px">
+    <img src="./res/ytShare_w.png" width="200" height="200">
+    <div class="purple">
+      <b>모바일에서도 타임스탬프를 추가해서<br>
+      유튜브 링크를 편하게 공유해보세요</b>
+    </div>
+
     <div style="margin-bottom: 20px">
       <h3 class="yellow">유튜브 링크</h3>
     </div>
@@ -21,15 +27,15 @@
 
     <div class="timestamp">
       <h3 class="green">
-        타임스탬프
+        타임스탬프 사용
         <input type="checkbox" id="use_time">
       </h3>
     </div>
     <div class="pink time_input hidden">
-      시간
-      <input type="number" value=0 min=0 id="h" placeholder="시">
-      <input type="number" value=0 min=0 max=59 id="m" placeholder="분">
-      <input type="number" value=0 min=0 max=59 id="s" placeholder="초">
+      <b>시간</b>
+      <input type="number" min=0 id="h" placeholder="시">
+      <input type="number" min=0 max=59 id="m" placeholder="분">
+      <input type="number" min=0 max=59 id="s" placeholder="초">
     </div>
 
     <div>

@@ -21,26 +21,46 @@ let showElem = (item) => {
 let shareYT = () => {
   const yText = iLink.value;
 
-  let hour = parseInt(document.querySelector("#h").value);
-  let min = parseInt(document.querySelector("#m").value);
-  let sec = parseInt(document.querySelector("#s").value);
+  let hour = document.querySelector("#h").value;
+  let min = document.querySelector("#m").value;
+  let sec = document.querySelector("#s").value;
+
+  if (hour.length === 0) hour = 0;
+  if (min.length === 0) min = 0;
+  if (sec.length === 0) sec = 0;
+
+  hour = parseInt(hour);
+  min = parseInt(min);
+  sec = parseInt(sec);
+
+  let tStamp = 0;
+  if (
+    !(hour === 0 && min === 0 && sec === 0) &&
+    !(hour < 0 || min < 0 || sec < 0)
+  )
+    tStamp = hour * 3600 + min * 60 + sec;
 
   let linkPos = yText.indexOf("?v=");
-  if (linkPos === -1 && yText.indexOf("?t=") !== -1) {
-    linkPos = yText.indexOf("youtu.be/");
-    flagAlready = 1;
+  if (linkPos === -1) {
+    if (useTime.checked) {
+      if (tStamp !== 0) {
+        linkPos = yText.indexOf("youtu.be/");
+        flagAlready = 1;
+      }
+      else {
+        if (yText.indexOf("?t=") !== -1) {
+          linkPos = yText.indexOf("youtu.be/");
+          flagAlready = 1;
+        }
+      }
+    }
   }
 
   if (linkPos !== -1) {
     let shareLink = "https://youtu.be/" + yText.substr(linkPos + (flagAlready === 1 ? "youtu.be/".length : "?v=".length), 11);
 
-    if (useTime.checked) {
-      if (!(hour === 0 && min === 0 && sec === 0)
-      && (!(hour < 0 || min < 0 || sec < 0))) {
-        const tStamp = (hour * 3600) + (min * 60) + sec;
-        shareLink += "?t=" + tStamp;
-      }
-    }
+    if (useTime.checked && (tStamp !== 0))
+      shareLink += "?t=" + tStamp;
 
     if (navigator.share) {
       navigator
@@ -64,10 +84,10 @@ let shareYT = () => {
   }
   else {
     hideElem(btnShareYT);
-    if (yText.search("youtu.be") !== -1 && yText.length === 28)
-        textResult.innerText = "이미 변환이 완료된 링크네요 😄";
+    if (yText.search("youtu.be") !== -1)
+      textResult.innerText = "이미 변환이 완료된 링크네요 😄";
     else
-        textResult.innerText = "유튜브 영상 링크가 아닌 것 같습니다 🙄";
+      textResult.innerText = "유튜브 영상 링크가 아닌 것 같습니다 🙄";
   }
 
   hideElem(inputTime);
