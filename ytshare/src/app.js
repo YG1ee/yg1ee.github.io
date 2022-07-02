@@ -94,3 +94,18 @@ let showTime = () => {
 btnShareYT.addEventListener("click", shareYT);
 btnRetryYT.addEventListener("click", retryYT);
 useTime.addEventListener("click", showTime);
+
+let checkboxes = document.querySelectorAll('input[type="checkbox"]');
+// On document ready event, set the initial states of the checkboxes
+document.addEventListener('DOMContentLoaded', function () {
+  checkboxes.forEach(function (checkbox) {
+    this.checked = false;
+  });
+});
+
+// // When checkbox state is changed, save it to the localStorage
+// checkboxes.forEach(function (checkbox) {
+//   checkbox.addEventListener('change', function () {
+//     window.localStorage.setItem(this.id, this.value);
+//   });
+// });
