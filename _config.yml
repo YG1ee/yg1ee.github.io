@@ -1,7 +1,7 @@
 # Site settings
 title: "YG1ee Weblog"
 email: fanfolderkim@gmail.com
-description: "A dark blog theme for Jekyll."
+description: "좋아서 하는 개발 블로그"
 baseurl: ""
 url: "https://yg1ee.github.io"
 site: "https://yg1ee.github.io"
