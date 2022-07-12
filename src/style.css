@@ -1,13 +1,3 @@
-@font-face {
-  font-family: 'SeoulNamsan';
-  src: url('../fonts/Seoul/08SeoulNamsanM.woff');
-}
-
-@font-face {
-  font-family: 'Hack';
-  src: url('../fonts/Hack/hack-regular-webfont.woff');
-}
-
 body {
   background-color: #282A36;
 }

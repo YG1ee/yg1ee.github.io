@@ -17,18 +17,14 @@
 */
 
 @font-face {
-    font-family: 'SeoulNamsan';
-    src: url('../fonts/Seoul/08SeoulNamsanM.woff');
+    font-family: 'IBM Plex Sans Kr Regular';
+    src: url('../fonts/IBM-Plex-Sans-KR/IBMPlexSansKR-Regular.woff');
 }
 
 body {
-    font-family: 'SeoulNamsan';
+    font-family: 'IBM Plex Sans KR';
     background-color: #282A36;
 }
-
-/* tr {
-    background-color: #FFFFF0;
-} */
 
 .con_number {
     background-color: #FF79C6;
