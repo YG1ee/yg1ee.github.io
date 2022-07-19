@@ -92,88 +92,35 @@
     <div class="page-content">
       <div class="wrap">
       <div class="container-fluid index">
-    <div class="row">
+  <div class="row index all-posts">
 
-        <div class="col-md-12 main content-panel">
+    <h1 class="header author-header">Search</h1>
 
-            <div class="gravatar">
-                <img src="./res/tux.svg" class="img-circle about-image" height=auto width="150" alt="YG1ee Weblog" />
-            </div>
-
-            <h1 class="header author-header" itemprop="headline">YG1ee Weblog</h1>
-
-            <div class="author-text">
-                개발 일지
-            </div>
-
-            <p class="links">
-  <a href="https://twitter.com/YG1ee" target="_new"><i class="fa fa-twitter"></i></a>
-  
-  
-  
-  
-  <a href="https://github.com/YG1ee" target="_new"><i class="fa fa-github-alt"></i></a>
-  
-  
-  
-  <a href="/feed.xml" target="_new"><i class="fa fa-rss"></i></a>
-</p>
-
-          </div>
-          <div class="col-md-12 main content-panel">
-
-            <div class="articles">
-
-              <h2>Latest Articles</h2>
-
-              <ul>
-                  
-
-                      <li>
-                          <a href="/program/2022/07/02/YTshare/">YTshare</a>
-                          <small class="hidden-xs">July 2, 2022</small>
-                      </li>
-
-                  
-
-                      <li>
-                          <a href="/program/2022/06/23/wd2uk/">WD2UK 🇺🇦</a>
-                          <small class="hidden-xs">June 23, 2022</small>
-                      </li>
-
-                  
-
-                      <li>
-                          <a href="/jekyll/2015/03/24/welcome-to-carte-noir/">Welcome to Carte Noire</a>
-                          <small class="hidden-xs">March 24, 2015</small>
-                      </li>
-
-                  
-
-                      <li>
-                          <a href="/jekyll/2014/06/10/carte-noire-in-action/">Carte Noire in Action</a>
-                          <small class="hidden-xs">June 10, 2014</small>
-                      </li>
-
-                  
-
-                      <li>
-                          <a href="/jekyll/2014/06/09/so-what-is-jekyll/">So, What is Jekyll?</a>
-                          <small class="hidden-xs">June 9, 2014</small>
-                      </li>
-
-                  
-                  <li>
-                      <small><i><a href="/posts/">more...</a></i></small>
-                  </li>
-              </ul>
-
-            </div>
-
-        </div>
-
+    <div id="search-container">
+      <input type="text" id="search-input" placeholder="Type here...">
+      <div class="col-md-12 content-panel articles">
+        <ul id="results-container"><small>Start typing to see some results</small></ul>
+      </div>
     </div>
+
+  </div>
 </div>
+
+<hr class="search-hr" />
+
+<script src="/js/jekyll-search.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+  SimpleJekyllSearch.init({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    dataSource: '/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}<\/a><\/li>',
+    noResultsText: 'No results found',
+    limit: 10,
+    fuzzy: true,
+  })
+</script>
 
       </div>
     </div>
@@ -208,48 +155,6 @@
    });
 </script>
 
-
-<script type="text/javascript">
-
-  function setFontSize() {
-
-    var title, dateOfTitle, fontSizeOfTitle, listOfA, listOfSmall, listOfArticlesDiv, divWidth;
-
-    listOfArticlesDiv = document.getElementsByClassName("articles");
-
-    for (i = 0; i < listOfArticlesDiv.length; i++) {
-
-      listOfA = document.getElementsByClassName("articles")[i].getElementsByTagName("a");
-      listOfSmall = document.getElementsByClassName("articles")[i].getElementsByTagName("small");
-
-      divWidth = document.getElementsByClassName("articles")[i].offsetWidth;
-
-      for (k = 0; k < listOfSmall.length; k++) {
-
-        title = $(listOfA[k]);
-        dateOfTitle = $(listOfSmall[k]);
-
-        fontSizeOfTitle = startingFontSize;
-        title.css("font-size", fontSizeOfTitle);
-
-        while (title.width() + dateOfTitle.width() >= divWidth)
-          title.css("font-size", fontSizeOfTitle -= 0.5);
-
-      }
-    }
-  }
-
-  function getStartFontSize() {
-    try {
-      startingFontSize = parseInt($(document.getElementsByClassName("articles")[0].getElementsByTagName("a")[0]).css("font-size"));
-      setFontSize();
-      window.addEventListener('resize', setFontSize, true);
-    } catch (e) {}
-  }
-
-  $(document).ready(getStartFontSize);
-
-</script>
 
 
 

@@ -4,7 +4,7 @@
     <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>YG1ee Weblog</title>
+<title>So, What is Jekyll?</title>
 <meta name="description" content="좋아서 하는 개발 블로그">
 
 <!-- Primary Meta Tags -->
@@ -91,88 +91,77 @@
 
     <div class="page-content">
       <div class="wrap">
-      <div class="container-fluid index">
-    <div class="row">
+      
 
-        <div class="col-md-12 main content-panel">
+<div class="container-fluid single">
+  <div class="row">
 
-            <div class="gravatar">
-                <img src="./res/tux.svg" class="img-circle about-image" height=auto width="150" alt="YG1ee Weblog" />
-            </div>
+    <div itemscope itemtype="http://schema.org/Article" class="col-md-12 article">
+      
+      <div class="thumb">
+        <img itemprop="image" src="https://i.imgur.com/aRQcGSi.png" alt="Thumbnail: jekyll" />
+      </div>
+      
 
-            <h1 class="header author-header" itemprop="headline">YG1ee Weblog</h1>
+      <h1 class="header" itemprop="name">So, What is Jekyll?</h1>
 
-            <div class="author-text">
-                개발 일지
-            </div>
+      <div class="author">
+        <small><i>
+          
+          on <span itemprop="datePublished">June 9, 2014</span>
+           under jekyll
+        </i></small>
+      </div>
 
-            <p class="links">
-  <a href="https://twitter.com/YG1ee" target="_new"><i class="fa fa-twitter"></i></a>
-  
-  
-  
-  
-  <a href="https://github.com/YG1ee" target="_new"><i class="fa fa-github-alt"></i></a>
-  
-  
-  
-  <a href="/feed.xml" target="_new"><i class="fa fa-rss"></i></a>
-</p>
+      <div class="read-time">
+        <small>
+          1 minute read
+        </small>
+      </div>
 
-          </div>
-          <div class="col-md-12 main content-panel">
+      <div class="content-panel content">
 
-            <div class="articles">
+        
 
-              <h2>Latest Articles</h2>
+        <span itemprop="articleBody"><p>Jekyll is a tool for transforming your plain text into static websites and
+blogs. It is simple, static, and blog-aware. Jekyll uses the
+<a href="http://docs.shopify.com/themes/liquid-basics">Liquid</a> templating
+language and has builtin <a href="http://daringfireball.net/projects/markdown/">Markdown</a>
+and <a href="http://en.wikipedia.org/wiki/Textile_(markup_language)">Textile</a> support.</p>
 
-              <ul>
-                  
+<p>It also ties in nicely to <a href="https://pages.github.com/">Github Pages</a>.</p>
 
-                      <li>
-                          <a href="/program/2022/07/02/YTshare/">YTshare</a>
-                          <small class="hidden-xs">July 2, 2022</small>
-                      </li>
+<p>Learn more about Jekyll on their <a href="http://jekyllrb.com/">website</a>.</p>
+</span>
 
-                  
+        
 
-                      <li>
-                          <a href="/program/2022/06/23/wd2uk/">WD2UK 🇺🇦</a>
-                          <small class="hidden-xs">June 23, 2022</small>
-                      </li>
+        
 
-                  
-
-                      <li>
-                          <a href="/jekyll/2015/03/24/welcome-to-carte-noir/">Welcome to Carte Noire</a>
-                          <small class="hidden-xs">March 24, 2015</small>
-                      </li>
-
-                  
-
-                      <li>
-                          <a href="/jekyll/2014/06/10/carte-noire-in-action/">Carte Noire in Action</a>
-                          <small class="hidden-xs">June 10, 2014</small>
-                      </li>
-
-                  
-
-                      <li>
-                          <a href="/jekyll/2014/06/09/so-what-is-jekyll/">So, What is Jekyll?</a>
-                          <small class="hidden-xs">June 9, 2014</small>
-                      </li>
-
-                  
-                  <li>
-                      <small><i><a href="/posts/">more...</a></i></small>
-                  </li>
-              </ul>
-
-            </div>
-
+        
+        <div class="tags">
+          <small>
+          <i class="fa fa-tags"></i>
+            about, jekyll, manual
+          </small>
         </div>
+        
+
+      </div>
+
+      
+      <div class="content-panel feedback">
+        I <i class="fa fa-heart"></i> feedback.<br />
+        Let me know what you think of this article on twitter <a href="https://twitter.com/YG1ee">@YG1ee</a>!
+      </div>
+      
+
+      
 
     </div>
+
+  </div>
+
 </div>
 
       </div>
@@ -208,48 +197,6 @@
    });
 </script>
 
-
-<script type="text/javascript">
-
-  function setFontSize() {
-
-    var title, dateOfTitle, fontSizeOfTitle, listOfA, listOfSmall, listOfArticlesDiv, divWidth;
-
-    listOfArticlesDiv = document.getElementsByClassName("articles");
-
-    for (i = 0; i < listOfArticlesDiv.length; i++) {
-
-      listOfA = document.getElementsByClassName("articles")[i].getElementsByTagName("a");
-      listOfSmall = document.getElementsByClassName("articles")[i].getElementsByTagName("small");
-
-      divWidth = document.getElementsByClassName("articles")[i].offsetWidth;
-
-      for (k = 0; k < listOfSmall.length; k++) {
-
-        title = $(listOfA[k]);
-        dateOfTitle = $(listOfSmall[k]);
-
-        fontSizeOfTitle = startingFontSize;
-        title.css("font-size", fontSizeOfTitle);
-
-        while (title.width() + dateOfTitle.width() >= divWidth)
-          title.css("font-size", fontSizeOfTitle -= 0.5);
-
-      }
-    }
-  }
-
-  function getStartFontSize() {
-    try {
-      startingFontSize = parseInt($(document.getElementsByClassName("articles")[0].getElementsByTagName("a")[0]).css("font-size"));
-      setFontSize();
-      window.addEventListener('resize', setFontSize, true);
-    } catch (e) {}
-  }
-
-  $(document).ready(getStartFontSize);
-
-</script>
 
 
 

@@ -1,14 +1,51 @@
----
-layout: none
----
 [
-  {% for post in site.posts %}
+  
   {
-    "title"    : "{{ post.title | escape }}",
-    "category" : "{{ post.category }}",
-    "tags"     : "{{ post.tags | join: ', ' }}",
-    "url"      : "{{ site.baseurl }}{{ post.url }}",
-    "date"     : "{{ post.date }}"
-    } {% unless forloop.last %},{% endunless %}
-    {% endfor %}
+    "title"    : "YTshare",
+    "category" : "",
+    "tags"     : "youtube, timestamp",
+    "url"      : "/program/2022/07/02/YTshare/",
+    "date"     : "2022-07-02 13:34:32 +0900"
+    } ,
+    
+  {
+    "title"    : "WD2UK 🇺🇦",
+    "category" : "",
+    "tags"     : "wd2uk, wordle, Web Share API, emoji",
+    "url"      : "/program/2022/06/23/wd2uk/",
+    "date"     : "2022-06-23 17:13:16 +0900"
+    } ,
+    
+  {
+    "title"    : "Welcome to Carte Noire",
+    "category" : "",
+    "tags"     : "welcome, to, carte, noire, manual",
+    "url"      : "/jekyll/2015/03/24/welcome-to-carte-noir/",
+    "date"     : "2015-03-24 00:31:19 +0900"
+    } ,
+    
+  {
+    "title"    : "Carte Noire in Action",
+    "category" : "",
+    "tags"     : "demo, action, carte, noire, manual",
+    "url"      : "/jekyll/2014/06/10/carte-noire-in-action/",
+    "date"     : "2014-06-10 21:31:19 +0900"
+    } ,
+    
+  {
+    "title"    : "So, What is Jekyll?",
+    "category" : "",
+    "tags"     : "about, jekyll, manual",
+    "url"      : "/jekyll/2014/06/09/so-what-is-jekyll/",
+    "date"     : "2014-06-09 21:32:18 +0900"
+    } ,
+    
+  {
+    "title"    : "Using thumbnails",
+    "category" : "",
+    "tags"     : "thumbnails, carte noire, manual",
+    "url"      : "/jekyll/2014/06/08/using-thumbnails/",
+    "date"     : "2014-06-08 21:32:18 +0900"
+    } 
+    
   ]

@@ -4,7 +4,7 @@
     <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>YG1ee Weblog</title>
+<title>Using thumbnails</title>
 <meta name="description" content="좋아서 하는 개발 블로그">
 
 <!-- Primary Meta Tags -->
@@ -91,88 +91,107 @@
 
     <div class="page-content">
       <div class="wrap">
-      <div class="container-fluid index">
-    <div class="row">
+      
 
-        <div class="col-md-12 main content-panel">
+<div class="container-fluid single">
+  <div class="row">
 
-            <div class="gravatar">
-                <img src="./res/tux.svg" class="img-circle about-image" height=auto width="150" alt="YG1ee Weblog" />
-            </div>
+    <div itemscope itemtype="http://schema.org/Article" class="col-md-12 article">
+      
+      <div class="thumb">
+        <img itemprop="image" src="https://i.imgur.com/aRQcGSi.png" alt="Thumbnail: jekyll" />
+      </div>
+      
 
-            <h1 class="header author-header" itemprop="headline">YG1ee Weblog</h1>
+      <h1 class="header" itemprop="name">Using thumbnails</h1>
 
-            <div class="author-text">
-                개발 일지
-            </div>
+      <div class="author">
+        <small><i>
+          
+          on <span itemprop="datePublished">June 8, 2014</span>
+           under jekyll
+        </i></small>
+      </div>
 
-            <p class="links">
-  <a href="https://twitter.com/YG1ee" target="_new"><i class="fa fa-twitter"></i></a>
-  
-  
-  
-  
-  <a href="https://github.com/YG1ee" target="_new"><i class="fa fa-github-alt"></i></a>
-  
-  
-  
-  <a href="/feed.xml" target="_new"><i class="fa fa-rss"></i></a>
-</p>
+      <div class="read-time">
+        <small>
+          1 minute read
+        </small>
+      </div>
 
-          </div>
-          <div class="col-md-12 main content-panel">
+      <div class="content-panel content">
 
-            <div class="articles">
+        
 
-              <h2>Latest Articles</h2>
+        <span itemprop="articleBody"><p>Carte Noire is designed to start each article with an all-white image as a
+thumbnail. These are created by adding a <code class="highlighter-rouge">thumbnail</code> parameter to the article’s
+<a href="http://jekyllrb.com/docs/frontmatter/">YAML frontmatter</a>. This thumbnail parameter is processed in one of two ways,
+images specified in <code class="highlighter-rouge">_data/thumbnails.yml</code> or using <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a>.</p>
 
-              <ul>
-                  
+<h2 id="images">Images</h2>
 
-                      <li>
-                          <a href="/program/2022/07/02/YTshare/">YTshare</a>
-                          <small class="hidden-xs">July 2, 2022</small>
-                      </li>
+<p>To use your own custom images as a thumbnail you must upload them to a web available
+location (I use <a href="http://imgur.com/">Imgur</a>) and then you need to add the url to <code class="highlighter-rouge">_data/thumbnail.yml</code>
+with an associated keyword.</p>
 
-                  
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyll: "http://i.imgur.com/aRQcGSi.png"
+</code></pre></div></div>
 
-                      <li>
-                          <a href="/program/2022/06/23/wd2uk/">WD2UK 🇺🇦</a>
-                          <small class="hidden-xs">June 23, 2022</small>
-                      </li>
+<p>You then add a <code class="highlighter-rouge">thumbnail</code> option to the article’s frontmatter and provide the keyword
+for that thumbnail.</p>
 
-                  
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>thumbnail: jekyll
+</code></pre></div></div>
 
-                      <li>
-                          <a href="/jekyll/2015/03/24/welcome-to-carte-noir/">Welcome to Carte Noire</a>
-                          <small class="hidden-xs">March 24, 2015</small>
-                      </li>
+<p>This allows you to re-use thumbnails across multiple articles without having to
+specify the url each time.</p>
 
-                  
+<h2 id="font-awesome">Font Awesome</h2>
 
-                      <li>
-                          <a href="/jekyll/2014/06/10/carte-noire-in-action/">Carte Noire in Action</a>
-                          <small class="hidden-xs">June 10, 2014</small>
-                      </li>
+<p>If jekyll can’t find a corresponding image in your <code class="highlighter-rouge">thumbnail.yml</code> file then it
+will assume you want to use a Font Awesome icon instead. You can find the full
+list of Font Awesome icons <a href="http://fortawesome.github.io/Font-Awesome/icons/">here</a>.</p>
 
-                  
+<p>So for example if your article is about android and you want to use the <a href="http://fortawesome.github.io/Font-Awesome/icon/android/">android icon</a>
+from font awesome you can just specify the following in your frontmatter.</p>
 
-                      <li>
-                          <a href="/jekyll/2014/06/09/so-what-is-jekyll/">So, What is Jekyll?</a>
-                          <small class="hidden-xs">June 9, 2014</small>
-                      </li>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>thumbnail: android
+</code></pre></div></div>
 
-                  
-                  <li>
-                      <small><i><a href="/posts/">more...</a></i></small>
-                  </li>
-              </ul>
+<p>Then in the future if you decide you want to use your own android icon you can just
+add it to <code class="highlighter-rouge">_data/thumbnails.yml</code> which will override it for all articles using
+the android thumbnail.</p>
 
-            </div>
+</span>
 
+        
+
+        
+
+        
+        <div class="tags">
+          <small>
+          <i class="fa fa-tags"></i>
+            thumbnails, carte noire, manual
+          </small>
         </div>
+        
+
+      </div>
+
+      
+      <div class="content-panel feedback">
+        I <i class="fa fa-heart"></i> feedback.<br />
+        Let me know what you think of this article on twitter <a href="https://twitter.com/YG1ee">@YG1ee</a>!
+      </div>
+      
+
+      
 
     </div>
+
+  </div>
+
 </div>
 
       </div>
@@ -208,48 +227,6 @@
    });
 </script>
 
-
-<script type="text/javascript">
-
-  function setFontSize() {
-
-    var title, dateOfTitle, fontSizeOfTitle, listOfA, listOfSmall, listOfArticlesDiv, divWidth;
-
-    listOfArticlesDiv = document.getElementsByClassName("articles");
-
-    for (i = 0; i < listOfArticlesDiv.length; i++) {
-
-      listOfA = document.getElementsByClassName("articles")[i].getElementsByTagName("a");
-      listOfSmall = document.getElementsByClassName("articles")[i].getElementsByTagName("small");
-
-      divWidth = document.getElementsByClassName("articles")[i].offsetWidth;
-
-      for (k = 0; k < listOfSmall.length; k++) {
-
-        title = $(listOfA[k]);
-        dateOfTitle = $(listOfSmall[k]);
-
-        fontSizeOfTitle = startingFontSize;
-        title.css("font-size", fontSizeOfTitle);
-
-        while (title.width() + dateOfTitle.width() >= divWidth)
-          title.css("font-size", fontSizeOfTitle -= 0.5);
-
-      }
-    }
-  }
-
-  function getStartFontSize() {
-    try {
-      startingFontSize = parseInt($(document.getElementsByClassName("articles")[0].getElementsByTagName("a")[0]).css("font-size"));
-      setFontSize();
-      window.addEventListener('resize', setFontSize, true);
-    } catch (e) {}
-  }
-
-  $(document).ready(getStartFontSize);
-
-</script>
 
 
 
