@@ -30,3 +30,5 @@ Gemfile
 Gemfile.lock
 
 node_modules
+build.sh
+copy.sh
