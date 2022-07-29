@@ -1,44 +1,48 @@
-<!DOCTYPE html>
-<html>
+---
+layout: default
+title: 404
+permalink: /404.html
+---
 
-<head>
-    <meta charset="utf-8">
-    <title>Single Page Apps for GitHub Pages</title>
-    <script type="text/javascript">
-        // Single Page Apps for GitHub Pages
-        // MIT License
-        // https://github.com/rafgraph/spa-github-pages
-        // This script takes the current url and converts the path and query
-        // string into just a query string, and then redirects the browser
-        // to the new url with only a query string and hash fragment,
-        // e.g. https://www.foo.tld/one/two?a=b&c=d#qwe, becomes
-        // https://www.foo.tld/?/one/two&a=b~and~c=d#qwe
-        // Note: this 404.html file must be at least 512 bytes for it to work
-        // with Internet Explorer (it is currently > 512 bytes)
+<div class="container-fluid index error">
+  <div class="row">
 
-        // If you're creating a Project Pages site and NOT using a custom domain,
-        // then set pathSegmentsToKeep to 1 (enterprise users may need to set it to > 1).
-        // This way the code will only replace the route part of the path, and not
-        // the real directory in which the app resides, for example:
-        // https://username.github.io/repo-name/one/two?a=b&c=d#qwe becomes
-        // https://username.github.io/repo-name/?/one/two&a=b~and~c=d#qwe
-        // Otherwise, leave pathSegmentsToKeep as 0.
-        var pathSegmentsToKeep = 0;
+    <div class="col-md-12 content-panel articles">
+      <h1 class="header author-header">404</h1>
 
-        var l = window.location;
-        l.replace(
-            l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-            l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
-            l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
-            (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-            l.hash
-        );
+      <div class="error-text">
+        Sorry but this page doesn't seem to exist.
+      </div>
 
-    </script>
-</head>
+      <div class="error-text">
+        <a href="{{ site.baseurl }}/">Home</a> |
+        <a href="{{ site.baseurl }}/posts/">All Posts</a> |
+        <a href="{{ site.baseurl }}/search/">Search</a>
+      </div>
 
-<body>
-    존재하지 않는 서비스입니다!
-</body>
+      {% include social_links.html %}
 
-</html>
+    </div>
+
+  </div>
+
+  <div class="content-panel related">
+    {% for post in site.posts limit:1 %}
+    <div class="related-header">
+      <a href="{{ site.baseurl }}{{ post.url }}">Suggested Article</a>
+    </div>
+    <div class="title">
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+    </div>
+    <div class="excerpt">
+      {% if post.summary %}
+      {{ post.summary | strip_html | truncatewords:30 }}
+      {% else %}
+      {{ post.excerpt | strip_html | truncatewords:30 }}
+      {% endif %}
+      <a href="{{ site.baseurl }}{{ post.url }}">Continue Reading</a>
+    </div>
+    {% endfor %}
+  </div>
+
+</div>
