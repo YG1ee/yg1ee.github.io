@@ -4,7 +4,7 @@
     <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>YG1ee Weblog</title>
+<title>YTshare</title>
 <meta name="description" content="좋아서 하는 개발 블로그">
 
 <!-- Primary Meta Tags -->
@@ -91,89 +91,94 @@
 
     <div class="page-content">
       <div class="wrap">
-      <div class="container-fluid index">
+      
+
+<div class="container-fluid single">
   <div class="row">
 
-    <div class="col-md-12 main content-panel">
+    <div itemscope itemtype="http://schema.org/Article" class="col-md-12 article">
+      
+      <div class="thumb">
+        <img itemprop="image" src="/ytshare/res/favicon.ico" alt="Thumbnail: ytshare" />
+      </div>
+      
 
-      <div class="gravatar">
-        <img src="./res/tux.svg" class="img-circle about-image" height=auto width="150" alt="YG1ee Weblog" />
+      <h1 class="header" itemprop="name">YTshare</h1>
+
+      <div class="author">
+        <small><i>
+          
+          by
+          <span itemprop="author">
+            
+              <a rel="author" href="https://twitter.com/YG1ee">
+            
+            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+              <span itemprop="name">YG1ee</span>
+            </span>
+            
+              </a>
+            
+          </span>
+          
+          on <span itemprop="datePublished">July 2, 2022</span>
+           under program
+        </i></small>
       </div>
 
-      <h1 class="header author-header" itemprop="headline">YG1ee Weblog</h1>
-
-      <div class="author-text">
-        개발 일지
+      <div class="read-time">
+        <small>
+          1 minute read
+        </small>
       </div>
 
-      <p class="links">
-  <a href="https://twitter.com/YG1ee" target="_new"><i class="fa fa-twitter"></i></a>
-  
-  
-  
-  
-  <a href="https://github.com/YG1ee" target="_new"><i class="fa fa-github-alt"></i></a>
-  
-  
-  
-  <a href="/feed.xml" target="_new"><i class="fa fa-rss"></i></a>
-</p>
+      <div class="content-panel content">
 
-    </div>
-    <div class="col-md-12 main content-panel">
+        
 
-      <div class="articles">
+        <span itemprop="articleBody"><p>유튜브 공유를 PC, 모바일 뷰 관련 없이 깔끔한 링크로,
+타임스탬프를 넣어서 할 수 있도록 만들어주는 프로그램입니다.</p>
 
-        <h2>Latest Articles</h2>
+<p>Q: 타임스탬프는 어디에 쓰나요?<br />
+A: 어떤 동영상을 공유할 때, 특정 시점부터 재생되기 원할 때 씁니다.<br />
+<strong><a href="/ytshare/index.html">써보기</a></strong></p>
 
-        <ul>
-          
+<p><img src="https://i.imgur.com/DkxQfXq.png" alt="ytshare example 1" /><br />
+<img src="https://i.imgur.com/aFrsqZb.png" alt="ytshare example 2" /><br />
+<img src="https://i.imgur.com/oagfi7O.png" alt="ytshare example 3" /><br />
+<img src="https://i.imgur.com/9XEdNfI.png" alt="ytshare example 4" /></p>
+</span>
 
-          <li>
-            <a href="/program/2022/07/02/YTshare/">YTshare</a>
-            <small class="hidden-xs">July 2, 2022</small>
-          </li>
+        
 
-          
+        
 
-          <li>
-            <a href="/program/2022/06/23/wd2uk/">WD2UK 🇺🇦</a>
-            <small class="hidden-xs">June 23, 2022</small>
-          </li>
-
-          
-
-          <li>
-            <a href="/jekyll/2015/03/24/welcome-to-carte-noir/">Welcome to Carte Noire</a>
-            <small class="hidden-xs">March 24, 2015</small>
-          </li>
-
-          
-
-          <li>
-            <a href="/jekyll/2014/06/10/carte-noire-in-action/">Carte Noire in Action</a>
-            <small class="hidden-xs">June 10, 2014</small>
-          </li>
-
-          
-
-          <li>
-            <a href="/jekyll/2014/06/09/so-what-is-jekyll/">So, What is Jekyll?</a>
-            <small class="hidden-xs">June 9, 2014</small>
-          </li>
-
-          
-          <li>
-            <small><i><a href="/posts/">more...</a></i></small>
-          </li>
-        </ul>
+        
+        <div class="tags">
+          <small>
+          <i class="fa fa-tags"></i>
+            youtube, timestamp
+          </small>
+        </div>
+        
 
       </div>
+
+      
+      <div class="content-panel feedback">
+        I <i class="fa fa-heart"></i> feedback.<br />
+        Let me know what you think of this article on twitter <a href="https://twitter.com/YG1ee">@YG1ee</a>!
+      </div>
+      
+
+      
 
     </div>
 
   </div>
+
 </div>
+
       </div>
     </div>
 
@@ -207,48 +212,6 @@
    });
 </script>
 
-
-<script type="text/javascript">
-
-  function setFontSize() {
-
-    var title, dateOfTitle, fontSizeOfTitle, listOfA, listOfSmall, listOfArticlesDiv, divWidth;
-
-    listOfArticlesDiv = document.getElementsByClassName("articles");
-
-    for (i = 0; i < listOfArticlesDiv.length; i++) {
-
-      listOfA = document.getElementsByClassName("articles")[i].getElementsByTagName("a");
-      listOfSmall = document.getElementsByClassName("articles")[i].getElementsByTagName("small");
-
-      divWidth = document.getElementsByClassName("articles")[i].offsetWidth;
-
-      for (k = 0; k < listOfSmall.length; k++) {
-
-        title = $(listOfA[k]);
-        dateOfTitle = $(listOfSmall[k]);
-
-        fontSizeOfTitle = startingFontSize;
-        title.css("font-size", fontSizeOfTitle);
-
-        while (title.width() + dateOfTitle.width() >= divWidth)
-          title.css("font-size", fontSizeOfTitle -= 0.5);
-
-      }
-    }
-  }
-
-  function getStartFontSize() {
-    try {
-      startingFontSize = parseInt($(document.getElementsByClassName("articles")[0].getElementsByTagName("a")[0]).css("font-size"));
-      setFontSize();
-      window.addEventListener('resize', setFontSize, true);
-    } catch (e) {}
-  }
-
-  $(document).ready(getStartFontSize);
-
-</script>
 
 
 
