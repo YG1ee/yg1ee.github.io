@@ -1,3 +1,16 @@
+@font-face {
+  font-family: "IBM Plex Sans Kr Regular";
+  src: url("/assets/fonts/IBM-Plex-Sans-KR/IBMPlexSansKR-Regular.woff");
+}
+
+body {
+  font-family: "IBM Plex Sans KR Regular";
+  color: #F8F8F2;
+  background-color: #282A36;
+  word-break: break-all;
+  white-space: pre-line;
+}
+
 body {
   background-color: #282A36;
 }
