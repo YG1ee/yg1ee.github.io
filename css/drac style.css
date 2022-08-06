@@ -1,10 +1,7 @@
-@font-face {
-  font-family: "IBM Plex Sans Kr Regular";
-  src: url("/assets/fonts/IBM-Plex-Sans-KR/IBMPlexSansKR-Regular.woff");
-}
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap');
 
 body {
-  font-family: "IBM Plex Sans KR Regular";
+  font-family: "IBM Plex Sans KR";
   color: #F8F8F2;
   background-color: #282A36;
   word-break: break-all;
