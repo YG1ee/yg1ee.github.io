@@ -1,57 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>YG1ee Weblog</title>
-  <meta name="title" content="YG1ee Weblog" />
-
-
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://yg1ee.github.io/" />
-  <meta property="og:title" content="YG1ee Weblog" />
-  <meta property="og:description" content="좋아서 하는 개발 블로그" />
-  <meta property="og:image" content="/res/tux_og.png" />
-
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://yg1ee.github.io/" />
-  <meta property="twitter:title" content="YG1ee Weblog" />
-  <meta property="twitter:description" content="좋아서 하는 개발 블로그" />
-  <meta property="twitter:image" content="/res/tux_og.png" />
-  <!-- Start Single Page Apps for GitHub Pages -->
-  <script type="text/javascript">
-    // Single Page Apps for GitHub Pages
-    // MIT License
-    // https://github.com/rafgraph/spa-github-pages
-    // This script checks to see if a redirect is present in the query string,
-    // converts it back into the correct url and adds it to the
-    // browser's history using window.history.replaceState(...),
-    // which won't cause the browser to attempt to load the new url.
-    // When the single page app is loaded further down in this file,
-    // the correct url will be waiting in the browser's history for
-    // the single page app to route accordingly.
-    (function (l) {
-      if (l.search[1] === '/') {
-        var decoded = l.search.slice(1).split('&').map(function (s) {
-          return s.replace(/~and~/g, '&')
-        }).join('?');
-        window.history.replaceState(null, null,
-          l.pathname.slice(0, -1) + decoded + l.hash
-        );
-      }
-    }(window.location))
-  </script>
-  <!-- End Single Page Apps for GitHub Pages -->
-  <script type="module" crossorigin src="/assets/index.b5f81d01.js"></script>
-  <link rel="stylesheet" href="/assets/index.23d3dbf7.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Momentum App</title>
 </head>
 
 <body>
-  <div id="root"></div>
-  
+  <h2 id="clock">00:00:00</h2>
+  <form class="hidden" id="login-form">
+    <input required maxlength="15" type="text" placeholder="What is your name?" />
+    <input type="submit" value="Log In" />
+  </form>
+  <h1 class="hidden" id="greeting"></h1>
+  <h2 class="hidden" id="weather"></h2>
+  <form id="todo-form">
+    <h2 class="purple"> To-do Lists</h3>
+      <input type="text" placeholder="Write To-do then Submit!" required />
+  </form>
+  <ul id="todo-list"></ul>
+  <div id="quote">
+    <span class="foreground"></span>
+    -
+    <span class="green"></span>
+  </div>
+  <script src="js/greetings.js"></script>
+  <script src="js/clock.js"></script>
+  <script src="js/quotes.js"></script>
+  <script src="js/background.js"></script>
+  <script src="js/todo.js"></script>
+  <script src="js/weather.js"></script>
 </body>
 
 </html>
