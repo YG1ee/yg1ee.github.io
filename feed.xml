@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title />
+        <description>좋아서 하는 개발 블로그</description>
+        <link>https://yg1ee.github.io/</link>
+        <atom:link href="https://yg1ee.github.io/feed.xml" rel="self" type="application/rss+xml" />
+        <!-- <lastBuildDate>Fri, 01 Jan 2021 22:30:00 +0000</lastBuildDate> -->
+        <item>
+            <title>Yacht Dice 점수판</title>
+            <description>
+                <p>주사위 게임 요트 다이스의 점수 계산기입니다.</p>
+                <p>종이에 적고 직접 계산할 필요 없이 편하게 점수판을 기록하세요!</p>
+            </description>
+            <pubDate>2023-01-02T17:44:00+09:00</pubDate>
+            <link>https://yg1ee.github.io/post/yacht</link>
+            <guid isPermaLink="true">https://yg1ee.github.io/post/yacht</guid>
+        </item>
+        <item>
+            <title>유튜브 공유 프로그램</title>
+            <description>
+                <p>
+                    유튜브 공유를 PC, 모바일 뷰 관련 없이 깔끔한 링크로,
+                    <br />
+                    타임스탬프를 넣어서 할 수 있도록 만들어주는 프로그램입니다.
+                </p>
+                <p>
+                    Q: 타임스탬프는 어디에 쓰나요?
+                    <br />
+                    A: 유튜브 동영상을 공유할 때, 특정 시점부터 재생되기 원할 때 씁니다.
+                </p>
+            </description>
+            <pubDate>2023-01-02T11:35:00+09:00</pubDate>
+            <link>https://yg1ee.github.io/post/ytshare</link>
+            <guid isPermaLink="true">https://yg1ee.github.io/post/ytshare</guid>
+        </item>
+        <item>
+            <title>Github 블로그 검색엔진에 등록하기 (구글/네이버/다음)</title>
+            <description>
+                <p>
+                    Wordle 결과를 우크라이나 국기의 색에 맞추어 변환해주는 프로그램입니다.
+                    <br />
+                    텍스트의 이모지 분석, 그리고 클립보드 활용을 사용했습니다.
+                </p>
+            </description>
+            <pubDate>2022-06-23T00:00:00+09:00</pubDate>
+            <link>https://yg1ee.github.io/post/wd2uk</link>
+            <guid isPermaLink="true">https://yg1ee.github.io/post/wd2uk</guid>
+        </item>
+    </channel>
+</rss>
