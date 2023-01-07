@@ -7,7 +7,7 @@
         <atom:link href="https://yg1ee.github.io/feed.xml" rel="self" type="application/rss+xml" />
         <!-- <lastBuildDate>Fri, 01 Jan 2021 22:30:00 +0000</lastBuildDate> -->
         <item>
-            <title>Yacht Dice 점수판</title>
+            <title>Yacht Dice (요트 다이스) 웹 점수판</title>
             <description>
                 <p>주사위 게임 요트 다이스의 점수 계산기입니다.</p>
                 <p>종이에 적고 직접 계산할 필요 없이 편하게 점수판을 기록하세요!</p>
