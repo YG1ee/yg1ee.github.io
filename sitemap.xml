@@ -1,21 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
+      <loc>https://yg1ee.github.io/post/subconv</loc>
+        <lastmod>2023-01-17T18:21:00+09:00</lastmod>
+        <changefreq>monthly</changefreq>
+          <priority>0.5</priority>
+    </url>
+    <url>
       <loc>https://yg1ee.github.io/post/yacht</loc>
         <lastmod>2023-01-02T17:44:00+09:00</lastmod>
-        <changefreq>daily</changefreq>
+        <changefreq>weekly</changefreq>
           <priority>0.5</priority>
     </url>
     <url>
       <loc>https://yg1ee.github.io/post/ytshare</loc>
         <lastmod>2023-01-02T11:35:00+09:00</lastmod>
-        <changefreq>daily</changefreq>
+        <changefreq>monthly</changefreq>
           <priority>0.5</priority>
     </url>
     <url>
       <loc>https://yg1ee.github.io/post/wd2uk</loc>
         <lastmod>2022-12-30T08:35:00+09:00</lastmod>
-        <changefreq>daily</changefreq>
+        <changefreq>monthly</changefreq>
           <priority>0.5</priority>
     </url>
 </urlset>

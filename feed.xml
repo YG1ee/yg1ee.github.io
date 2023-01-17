@@ -7,6 +7,15 @@
         <atom:link href="https://yg1ee.github.io/feed.xml" rel="self" type="application/rss+xml" />
         <!-- <lastBuildDate>Fri, 01 Jan 2021 22:30:00 +0000</lastBuildDate> -->
         <item>
+            <title>자막 파일 형식 변환기</title>
+            <description>
+                <p>자막 파일을 다른 형식으로 변환해주는 프로그램입니다.</p>
+            </description>
+            <pubDate>2023-01-17T18:21:00+09:00</pubDate>
+            <link>https://yg1ee.github.io/post/subconv</link>
+            <guid isPermaLink="true">https://yg1ee.github.io/post/subconv</guid>
+        </item>
+        <item>
             <title>Yacht Dice (요트 다이스) 웹 점수판</title>
             <description>
                 <p>주사위 게임 요트 다이스의 점수 계산기입니다.</p>
