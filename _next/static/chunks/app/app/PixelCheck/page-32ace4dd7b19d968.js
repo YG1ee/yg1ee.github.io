@@ -1,9 +1,0 @@
-(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[571],{2293:function(e,n,r){Promise.resolve().then(r.bind(r,9798))},9798:function(e,n,r){"use strict";r.r(n),r.d(n,{default:function(){return PixelCheck}});var t=r(7437),s=r(2265);function PixelCheck(){let[e,n]=(0,s.useState)(-1),[r,i]=(0,s.useState)(-1),setW=()=>n(window.innerWidth),setH=()=>i(window.innerHeight);return(0,s.useEffect)(()=>(n(window.innerWidth),i(window.innerHeight),window.addEventListener("resize",setW),window.addEventListener("resize",setH),()=>{window.removeEventListener("resize",setW),window.removeEventListener("resize",setH)}),[]),(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)("h1",{children:"Pixel Check"}),(0,t.jsxs)("div",{className:"mt-8",children:[(0,t.jsxs)("h2",{children:["브라우저 너비 : ",(0,t.jsxs)("span",{className:"text-foreground",children:[e,"px"]})]}),(0,t.jsxs)("h2",{className:"text-d-pink",children:["브라우저 높이 : ",(0,t.jsxs)("span",{className:"text-foreground",children:[r,"px"]})]})]})]})}},622:function(e,n,r){"use strict";/**
- * @license React
- * react-jsx-runtime.production.min.js
- *
- * Copyright (c) Meta Platforms, Inc. and affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */var t=r(2265),s=Symbol.for("react.element"),i=Symbol.for("react.fragment"),o=Object.prototype.hasOwnProperty,c=t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,d={key:!0,ref:!0,__self:!0,__source:!0};function q(e,n,r){var t,i={},u=null,a=null;for(t in void 0!==r&&(u=""+r),void 0!==n.key&&(u=""+n.key),void 0!==n.ref&&(a=n.ref),n)o.call(n,t)&&!d.hasOwnProperty(t)&&(i[t]=n[t]);if(e&&e.defaultProps)for(t in n=e.defaultProps)void 0===i[t]&&(i[t]=n[t]);return{$$typeof:s,type:e,key:u,ref:a,props:i,_owner:c.current}}n.Fragment=i,n.jsx=q,n.jsxs=q},7437:function(e,n,r){"use strict";e.exports=r(622)}},function(e){e.O(0,[971,472,744],function(){return e(e.s=2293)}),_N_E=e.O()}]);
